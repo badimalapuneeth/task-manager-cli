@@ -10,13 +10,13 @@ def add_task():
 
     # Get task details from the user
     title = input("Enter task title: ").strip()
-    description = input("Enter task description: ").strip()
 
     # Validate the title
     if not title:
         print("Error: Task title cannot be empty.")
         return
 
+    description = input("Enter task description: ").strip()
     # Create a task dictionary
     task = {
         "id": next_task_id,
