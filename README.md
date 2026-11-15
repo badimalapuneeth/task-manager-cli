@@ -11,8 +11,8 @@ A simple command-line task management application built using Python. It allows 
 - Assign `pending` status to new tasks.
 - View all available tasks.
 - Display a friendly message when no tasks are available.
-- Reject empty task titles.
-- Handle invalid menu choices.
+- Reject empty or whitespace-only task titles.
+- Handle invalid menu choices without crashing.
 - Exit the application cleanly.
 
 ## Technologies Used
@@ -20,6 +20,23 @@ A simple command-line task management application built using Python. It allows 
 - Python 3.12+
 - uv
 - Git
+
+## Prerequisites
+
+Before running this project, install:
+
+- Python 3.12 or newer
+- Git
+- uv
+- Visual Studio Code or another code editor
+
+Verify the installations:
+
+```powershell
+python --version
+git --version
+uv --version
+```
 
 ## Project Setup
 
@@ -32,6 +49,8 @@ uv sync
 ```
 
 ## Run the Application
+
+Execute the following command from the project directory:
 
 ```bash
 uv run python -m task_manager_cli.main
@@ -55,11 +74,26 @@ task-manager-cli/
 │   └── task_manager_cli/
 │       ├── __init__.py
 │       └── main.py
-├── README.md
+├── .gitignore
+├── .python-version
 ├── LEARNINGS.md
+├── README.md
 ├── pyproject.toml
 └── uv.lock
 ```
+
+## Task Storage
+
+Tasks are stored in a Python list while the application is running. Each task contains:
+
+- ID
+- Title
+- Description
+- Status
+
+New tasks receive the default status `pending`.
+
+**Note:** Tasks are not permanently saved after the application exits.
 
 ## Author
 
