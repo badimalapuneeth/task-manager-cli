@@ -44,3 +44,9 @@
 ## 7. Key Takeaways
 
 Built a Python command-line task manager and practiced Python fundamentals, project setup, input validation, error handling, and Git version control.
+
+## 8. Challenge Faced and Solution
+
+**Challenge:** Implementing JSON file persistence so that tasks remain saved even after closing the application.
+
+**Solution:** Learned how to use Python's `json` module and `pathlib` to save tasks into `tasks.json` and load them when the application starts. Also handled missing or invalid JSON files to prevent the application from crashing.
