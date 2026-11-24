@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "title": "Learn Python",
+        "description": "Practice functions",
+        "status": "pending"
+    },
+    {
+        "id": 2,
+        "title": "Learn AWS",
+        "description": "Practice Lambda",
+        "status": "pending"
+    }
+]
